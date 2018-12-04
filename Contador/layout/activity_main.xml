@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btIncrementar"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="200sp" />
+
+    <Button
+        android:id="@+id/btIncrementar"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickIncrementar"
+        android:layout_margin="7dp"
+        android:text="@string/incrementar"
+        android:theme="@style/btIncrementar" />
+
+    <Button
+        android:id="@+id/btDecrementar"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickDecrementar"
+        android:layout_margin="7dp"
+        android:text="@string/decrementar"
+        android:theme="@style/btDecrementar" />
+</RelativeLayout>
