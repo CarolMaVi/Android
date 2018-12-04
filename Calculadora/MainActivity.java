@@ -41,23 +41,22 @@ public class MainActivity extends AppCompatActivity
 
     public void onClickPonerNumero(View view)
     {
-        //TODO Diferenciar entre numeros enteros y decimales
-
         if(nuevaOperacion)
         {
-            tvCalculadora.setTextColor(colorTV); //Restablecemos el color por defecto (Por si la ultima operación ha dado un resultado erroneo)
-            tvCalculadora.setText(((Button)view).getText().toString()); //Escribe el numero pulsado
+            //Restablecemos el color por defecto (Por si ha habido errores)
+            tvCalculadora.setTextColor(colorTV); 
+            tvCalculadora.setText(((Button)view).getText().toString()); //Escribimos el numero pulsado
 
             nuevaOperacion = false; //Para la siguiente instrucción
         }
-        else tvCalculadora.setText(tvCalculadora.getText() + ((Button)view).getText().toString()); //Escribe los numeros existentes y el pulsado
+        else tvCalculadora.setText(tvCalculadora.getText() + ((Button)view).getText().toString());//Escribe los numeros existentes y el pulsado
     }
 
     public void onClickPonerDecimal(View view)
     {
         if(tvCalculadora.length() != 0) //  Impide poner un decimal sin que existan numeros
         {
-            tvCalculadora.setTextColor(colorTV); //Restablecemos el color por defecto (Al borrar el TextView queda un 0, asi que puede ponerse una coma detras)
+            tvCalculadora.setTextColor(colorTV); 
             tvCalculadora.setText(tvCalculadora.getText() + ((Button)view).getText().toString()); //Escribe los numeros existentes y el punto
 
             nuevaOperacion = false; //Para la siguiente instrucción
@@ -75,9 +74,10 @@ public class MainActivity extends AppCompatActivity
     {
         btOperacion = (Button) view;
 
-        if(tvCalculadora.length() != 0) //Impide realizar la operación sin que existan numeros
+        if(tvCalculadora.length() != 0)
         {
-            valor1 = Double.parseDouble(tvCalculadora.getText().toString()); //El contenido actual del TextView se guarda para usarlo como primer operando
+            //El contenido actual del TextView se guarda para usarlo como primer operando
+            valor1 = Double.parseDouble(tvCalculadora.getText().toString()); 
 
             tvCalculadora.setText(""); //Limpia el TextView para el siguiente operando
 
@@ -92,18 +92,17 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    //TODO Despues de una operacion, si seguimos pulsando "=" se realiza otra vez la operacion
-
     public void onClickIgual(View view)
     {
-        valor2 = Double.parseDouble(tvCalculadora.getText().toString()); //El contenido actual del TextView se guarda para usarlo como segundo operando
+        //El contenido actual del TextView se guarda para usarlo como segundo operando
+        valor2 = Double.parseDouble(tvCalculadora.getText().toString()); 
 
-        if(sumar) //Comprueba cual de las operaciones se ha activado y muestra el resultado
+        if(sumar)
         {
             resultado = valor1 + valor2;
 
             tvCalculadora.setText(resultado + "");
-            sumar = false; //Los booleanos de las operaciones vuelven a ponerse en false para la siguiente operacion
+            sumar = false; //Para la siguiente operacion
         }
         else if(restar)
         {
@@ -136,16 +135,18 @@ public class MainActivity extends AppCompatActivity
         nuevaOperacion = true; //Al terminar una operación prepara otra nueva
     }
 
-    public void onClickBorrar(View view) //Borra solo el ultimo caracter
+    public void onClickBorrar(View view) 
     {
-        if(tvCalculadora.getText().length() != 0) //Impide realizar la operación sin que existan numeros
+        //Borra solo el ultimo caracter
+    
+        if(tvCalculadora.getText().length() != 0)
             tvCalculadora.setText(tvCalculadora.getText().subSequence(0, tvCalculadora.getText().length() - 1));
-        else Toast.makeText(this, "No hay números", Toast.LENGTH_SHORT).show(); //Muestra un toast alegando que el TextView esta vacio
+        else Toast.makeText(this, "No hay números", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickBorrarTodo(View view)
     {
-        tvCalculadora.setText("0");  //Reseteamos el TextView, las variables, el color y empezamos una operacion nueva
+        tvCalculadora.setText("0");  //Limpiamos el TextView, las variables, el color y empezamos una operacion nueva
         valor1 = 0;
         valor2 = 0;
 
