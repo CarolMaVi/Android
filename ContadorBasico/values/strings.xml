@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Ciclo de vida</string>
-    <string name="decrementar">Decrementar</string>
-    <string name="incrementar">Incrementar</string>
-    <string name="yaCero">Ya tienes cero</string>
-</resources>
