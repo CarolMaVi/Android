@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">desaparecerBotones</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="numeroBotones">Número de botones</string>
+    <string name="boton">Botón</string>
+    <string name="hasTardado">Has tardado %.2f segundos.</string>
+</resources>
