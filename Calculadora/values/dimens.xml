@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textoBoton">25sp</dimen>
+    <dimen name="textoNumeros">70sp</dimen>
+    <dimen name="margen">5dp</dimen>
+</resources>
