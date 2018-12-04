@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Colores</string>
+    <string name="tvRojo">ROJO</string>
+    <string name="tvVerde">VERDE</string>
+    <string name="tvAzul">AZUL</string>
+</resources>

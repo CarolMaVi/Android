@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/llColores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRojo1"
+            android:tag="rojo"
+            android:background="@color/Rojo"
+            android:text="@string/tvRojo"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvVerde1"
+            android:tag="verde"
+            android:background="@color/Verde"
+            android:text="@string/tvVerde"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvAzul1"
+            android:tag="azul"
+            android:background="@color/Azul"
+            android:text="@string/tvAzul"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvVerde2"
+            android:tag="verde"
+            android:background="@color/Verde"
+            android:text="@string/tvVerde"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvAzul2"
+            android:tag="azul"
+            android:background="@color/Azul"
+            android:text="@string/tvAzul"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvRojo2"
+            android:tag="rojo"
+            android:background="@color/Rojo"
+            android:text="@string/tvRojo"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAzul3"
+            android:tag="azul"
+            android:background="@color/Azul"
+            android:text="@string/tvAzul"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvRojo3"
+            android:tag="rojo"
+            android:background="@color/Rojo"
+            android:text="@string/tvRojo"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+        <TextView
+            android:id="@+id/tvVerde3"
+            android:tag="verde"
+            android:background="@color/Verde"
+            android:text="@string/tvVerde"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClickColor"/>
+
+    </LinearLayout>
+
+</LinearLayout>
