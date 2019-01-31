@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="contactos">Contactos</string>
+    <string name="nuevoContacto">Nuevo contacto</string>
+
+    <!-- Crear contacto -->
+    <string name="datosContacto">Datos del contacto</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="icono">Icono</string>
+    <string name="aceptar">Aceptar</string>
+
+    <!-- Diálogos -->
+    <string name="dialogoSi">Sí</string>
+    <string name="dialogoNo">No</string>
+    <string name="dialogoBorrarContacto">Borrar contacto</string>
+    <string name="dialogoConfirmar">¿Seguro?</string>
+
+    <string name="dialogoOpciones">Seleccione operación</string>
+    <string name="dialogoEnviarSMS">Enviar SMS</string>
+    <string name="dialogoLlamar">Realizar una llamada</string>
+
+    <!-- MENU -->
+    <string name="ordenAlfa">Orden alfabético</string>
+    <string name="ordenCat">Orden por categoría</string>
+    <string name="opciones">Opciones</string>
+    <string name="importar">Importar</string>
+
+</resources>

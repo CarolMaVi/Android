@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mOpciones"
+        android:title="@string/opciones">
+
+        <menu>
+            <item
+                android:id="@+id/mImportar"
+                android:title="@string/importar"/>
+            <item
+                android:id="@+id/mAlfabetico"
+                android:title="@string/ordenAlfa"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/mCategoria"
+                android:title="@string/ordenCat"
+                app:showAsAction="never"/>
+        </menu>
+
+    </item>
+</menu>
